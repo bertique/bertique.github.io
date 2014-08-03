@@ -1,20 +1,125 @@
 ---
 layout: default
 ---
+<!-- ==== GREYWRAP ==== -->		
+		<div id="greywrap">
+			<div class="container">
+						<div class="row">
+						
+				<br>
+				<br>
+			</div><!-- /row -->
+				<div class="row">
+					
+					<div class="col-lg-4">
+						<h2>Hi,</h2>
+						<p>I'm Michael. I love creating things - software, music, art. Check <a href="https://twitter.com/{{ site.twitter_username }}">my Twitter</a> to see what I'm up to. </p>
+						<p><a class="btn btn-success" href="mailto:b.michael.dick@gmail.com">Email me</a></p>
+					</div>	
+					<div class="col-lg-8 centered">
+						<img class="img-responsive" src="{{ "/img/macbook.png" | prepend: site.baseurl }}" align="">
+					</div>					
+				</div><!-- row -->
+			</div>
+			<br>
+			<br>
+		</div><!-- greywrap -->
 
-<div class="home">
+		
+<!-- ==== PORTFOLIO ==== -->
+		<div class="container" id="projects" name="projects">
+		<br>
+			<div class="row">
+				<br>
+				<h1 class="centered">SIDE PROJECTS</h1>
+				<hr>
+				<br>
+				<br>
+			</div><!-- /row -->
+			<div class="container">
+			<div class="row">	
+			
+			{% for page in site.pages reversed %}
+				{% if page.title %}
+				<div class="col-md-4 ">
+			    	<div class="grid mask">
+						<figure>
+							<img class="img-responsive" src="{{ page.image | prepend: site.baseurl }}" alt="">
+							<figcaption>
+								<h5>{{ page.title }}</h5>
+								<a data-toggle="modal" href="#myModal{{ forloop.index }}" class="btn btn-primary btn-lg">Take a Look</a>
+							</figcaption><!-- /figcaption -->
+						</figure><!-- /figure -->
+			    	</div><!-- /grid-mask -->
+				</div><!-- /col -->				
+				
+				<!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
+						      a modal for each of your projects. -->
+						      
+						  <div class="modal fade" id="myModal{{ forloop.index }}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						    <div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">{{ page.title }}</h4>
+						        </div>
+						        <div class="modal-body">
+						          <p><img class="img-responsive" src="{{ page.image | prepend: site.baseurl }}" alt=""></p>
+						          <p>{{ page.excerpt | markdownify }}</p>
+								  {% if page.permalink %}
+						          <p><b><a href="{{ page.permalink | prepend: site.baseurl }}">Visit Site</a></b></p>
+								  {% endif %}
+						        </div>
+						        <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div>
+						      </div><!-- /.modal-content -->
+						    </div><!-- /.modal-dialog -->
+						  </div><!-- /.modal -->
+				{% endif %}
+			{% endfor %}
+				
+			</div><!-- /row -->
+		</div><!-- /row -->
+	</div><!-- /container -->
+		{% if site.posts != empty %}
+		<!-- ==== SECTION DIVIDER4 ==== -->
+		<section class="section-divider">
 
-  <h1>Posts</h1>
-
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-date">{{ post.date | date: "%b %-d, %Y" }}</span>
-        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+		</section><!-- section -->
+		
+		<!-- ==== BLOG ==== -->
+		<div class="container" id="blog" name="blog">
+		<br>
+			<div class="row">
+				<br>
+				<h1 class="centered">RANDOM THOUGHTS</h1>
+				<hr>
+				<br>
+				<br>
+			</div><!-- /row -->			
+			<div class="row">
+				<div class="col-lg-12 blog-bg">
+					<div class="col-lg-3 centered">
+					<br>
+						<p><img class="img img-circle" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}" width="120px" height="120px"></p>
+						<h4>Michael</h4>
+						<a href="https://twitter.com/{{ site.twitter_username }}" class="icon icon-twitter"></a>												
+					</div>
+					<div class="col-lg-9 blog-content">
+					{% for post in site.posts %}
+						<div>
+						<h2>{{ post.title}}</h2>
+						<h5>Published {{ post.date | date: "%B %-d" }}.</h5>
+						{{ post.excerpt }}
+						<p><a href="{{ post.url | prepend: site.baseurl }}" class="icon icon-link"> Read More</a></p>
+						<br>
+						</div>
+					{% endfor %}
+					</div>
+				</div><!-- /col -->	
+			</div>
+			<br>
+			<br>
+		</div><!-- /container -->
+		{% endif %}

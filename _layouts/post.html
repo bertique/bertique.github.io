@@ -1,15 +1,17 @@
 ---
 layout: default
+ispost: true
 ---
-<div class="post">
-
-  <header class="post-header">
-    <h1>{{ page.title }}</h1>
-    <p class="meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-  </header>
-
-  <article class="post-content">
-  {{ content }}
-  </article>
-
+<div class="container">
+			<br>
+			<br>
+			<div class="row">
+				<h2 class="centered">{{ page.title }}</h2>
+				<div class="centered">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
+				<hr>
+				
+				<div class="col-lg-offset-2 col-lg-8">
+				{{ content }}
+				</div><!-- col-lg -->
+			</div><!-- row -->
 </div>
