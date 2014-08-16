@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "Welcome to my (static) blog!"
+title:  "Welcome to my (ec)static blog!"
 isPost: true
-date:   2014-08-16 10:10:00
+date:   2014-08-16 10:10:11
 categories: admin
 ---
 
