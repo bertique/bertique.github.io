@@ -10,8 +10,11 @@ ispost: true
 				<div class="centered">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
 				<hr>
 				
-				<div class="col-lg-offset-2 col-lg-8">
+				<div class="col-lg-offset-2 col-lg-8 post-content">
 				{{ content }}
 				</div><!-- col-lg -->
+				
 			</div><!-- row -->
+			<br>
+			<br>
 </div>
