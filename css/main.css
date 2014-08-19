@@ -280,7 +280,7 @@ a:after {
 	padding-top:120px;
 	text-align:center;
 	background-attachment: relative;
-	background-position: center center;
+	/*background-position: center center;*/
 	min-height: 650px;
 	width: 100%;
 	
@@ -336,10 +336,9 @@ a:after {
 	padding-bottom: 15px;
 }
 
-#greywrap .icon {
-	font-size: 60px;
-	line-height: 30px;
-	margin-bottom: 10px;
+#greywrap .glyphicon {
+	font-size: 30px;
+	top: -10px;
 }
 
 #footerwrap {
