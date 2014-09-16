@@ -1,15 +1,14 @@
 ---
 layout: page
-title: Sonos YouTube
+title: Sonos NPROne
 
-image: /img/project_sonos_youtube.jpg
+image: /img/project_sonos_nprone.jpg
 excerpt: |
- I love my [Sonos](sonos.com) wireless music system. Inspired by the work of [Rahim S](http://www.hirahim.com/blog/2014/07/10/shutting-down-soundcloud-on-sonos/), I'm currently working on integrating YouTube into Sonos using the [Sonos API](musicpartners.sonos.com) as well as the YouTube API.
+ I love my [Sonos](sonos.com) wireless music system. Inspired by the work of [Rahim S](http://www.hirahim.com/blog/2014/07/10/shutting-down-soundcloud-on-sonos/), I'm currently working on integrating the NPROne radio services into Sonos using the [Sonos API](musicpartners.sonos.com).
  
  More infos coming soon.
  
- 
- Java \| Node.js \| CoffeeScript \| APIs
+ Java \| APIs
 ---
 
 This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
