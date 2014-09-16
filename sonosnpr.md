@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Sonos NPROne
+title: NPROne for Sonos
 
 image: /img/project_sonos_nprone.jpg
 excerpt: |
