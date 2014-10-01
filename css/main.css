@@ -269,7 +269,6 @@ a:after {
 }
 
 
-
 /* ==========================================================================
    Wrap Sections
    ========================================================================== */
@@ -339,6 +338,11 @@ a:after {
 #greywrap .glyphicon {
 	font-size: 30px;
 	top: -20px;
+}
+
+#greywrap .icon {
+	font-size: 200%;
+	padding: 7px 5px 3px 5px;
 }
 
 #footerwrap {

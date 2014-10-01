@@ -21,7 +21,10 @@ layout: default
 					<div class="col-lg-4">
 						<h2>Hi,</h2>
 						<p>I'm Michael. I love creating things - software, music, art. Check <a href="https://twitter.com/{{ site.twitter_username }}">my Twitter</a> to see what I'm up to. </p>
-						<p><a class="btn btn-success" href="mailto:b.michael.dick@gmail.com">Email me</a></p>
+						<p><a href="mailto:{{ site.email }}" target="_blank" class="icon icon-mail"></a>
+						<a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank" class="icon icon-linkedin2"></a>
+						<a href="https://github.com/{{ site.github_username }}" target="_blank" class="icon icon-github"></a>
+						<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="icon icon-twitter2"></a></p>
 					</div>	
 					<div class="col-lg-8 centered">
 						<img class="img-responsive" src="{{ "/img/macbook.png" | prepend: site.baseurl }}" align="">
@@ -111,7 +114,7 @@ layout: default
 					<br>
 						<p><img class="img img-circle" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}" width="120px" height="120px"></p>
 						<h4>Michael</h4>
-						<a href="https://twitter.com/{{ site.twitter_username }}" class="icon icon-twitter"></a>												
+						<a href="https://twitter.com/{{ site.twitter_username }}" class="icon icon-twitter"></a>
 					</div>
 					<div class="col-lg-9 blog-content">
 					{% for post in site.posts %}
