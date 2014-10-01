@@ -1,11 +1,12 @@
 # Site settings
 title: Michael Dick
-email: n.michael.dick@gmail.com
+email: b.michael.dick@gmail.com
 description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
 baseurl: ""
 url: "http://michaeldick.me"
 twitter_username: midi2dot0
-github_username:  jekyll
+github_username:  bertique
+linkedin_username: in/dickm
 
 # Build settings
 markdown: kramdown
