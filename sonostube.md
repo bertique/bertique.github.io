@@ -4,10 +4,8 @@ title: YouTube for Sonos
 
 image: /img/project_sonos_youtube.jpg
 excerpt: |
- I love my [Sonos](sonos.com) wireless music system. Inspired by the work of [Rahim S](http://www.hirahim.com/blog/2014/07/10/shutting-down-soundcloud-on-sonos/), I'm currently working on integrating YouTube into Sonos using the [Sonos API](musicpartners.sonos.com) as well as the YouTube API.
- 
- More infos coming soon.
-  
+ I love my [Sonos](http://sonos.com) wireless music system. Inspired by the work of [Rahim S](http://www.hirahim.com/blog/2014/07/10/shutting-down-soundcloud-on-sonos/), I built a service to integrate YouTube into Sonos using the [Sonos API](http://musicpartners.sonos.com) as well as the YouTube API.
+
  Java \| Node.js \| CoffeeScript \| APIs
 ---
 
