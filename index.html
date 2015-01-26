@@ -74,10 +74,10 @@ layout: default
 						          <h4 class="modal-title">{{ page.title }}</h4>
 						        </div>
 						        <div class="modal-body">
-						          <p><img class="img-responsive" src="{{ page.image | prepend: site.baseurl }}" alt=""></p>
+						          <p><img class="img-responsive" src="{{ page.image | prepend: site.baseurl }}" alt="" style="width:300px"></p>
 						          <p>{{ page.excerpt | markdownify }}</p>
 								  {% if page.permalink %}
-						          <p><b><a href="{{ page.permalink | prepend: site.baseurl }}">Visit Site</a></b></p>
+						          <p><b><a href="{{ page.permalink | prepend: site.baseurl }}">Visit Project Site</a></b></p>
 								  {% endif %}
 						        </div>
 						        <div class="modal-footer">
