@@ -240,6 +240,19 @@ blockquote cite:before {
     margin-top: -65px;
 }
 
+div.post-content > p > img  {
+    -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#444')";
+	display: block;
+    margin: 0 auto;
+    max-height: 80%;
+    max-width: 100%;
+	margin-top: 30px;
+	margin-bottom: 30px;	
+}
+
 /* Links */
 a {
     color: #3498db;
