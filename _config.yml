@@ -1,7 +1,8 @@
 # Site settings
 title: Michael Dick
 email: b.michael.dick@gmail.com
-description: "Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description."
+description: "The personal website of Michael Dick."
+keywords: "Michael Dick, Product Manager, Seattle"
 baseurl: ""
 url: "http://michaeldick.me"
 twitter_username: midi2dot0
