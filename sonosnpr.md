@@ -13,10 +13,12 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 **Updates**
 
+06/10/2015: Updated authentication to use device connect through the NPR website(using OAuth). If you previously added the service, it will ask you to re-authenticate (you might have to update the service configuration on your customsd.htm). Also improved search to include aggregation lists of shows and podcasts.
+
 03/25/2015: Added Search and Suggestions - Now you can search through the NPR archive using the Sonos search. If you have previously added the service, make sure to update the settings to include search and update the version on the presentation map.
 
 ### Before you start
-You will need a NPR One account. You can create one for free by downloading the [NPR One app](http://www.npr.org/about/products/npr-one/), or right on the [NPR website](http://www.npr.org/templates/reg/). Make sure to sign up with username/password, because currently my Sonos service does not yet work with the Facebook or Google login. If you signed up with one of those services, you can set a password at [npr.org](https://npr.org/login).
+You will need a NPR One account. You can create one for free by downloading the [NPR One app](http://www.npr.org/about/products/npr-one/), or right on the [NPR website](http://www.npr.org/templates/reg/).
 
 ### Adding NPROne to your Sonos
 Open your Sonos desktop app and go to Help ->  About my Sonos System...
@@ -36,7 +38,7 @@ Enter the information below into the form and hit submit. This will add the serv
 3. **Endpoint URL:** http://sonosnprone.herokuapp.com/soap
 4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
 5. **Polling Interval:** 3600
-6. **Authentication SOAP header policy:** Session ID
+6. **Authentication SOAP header policy:** Device Link
 7. **Strings table:** 
  * Version: 2
  * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
@@ -51,7 +53,7 @@ Enter the information below into the form and hit submit. This will add the serv
  * Playback event logging during track play
  * Extended Metadata (for MOAPI-based InfoView)
  
-![screenshot](/img/sonos-nprone/sonos-add2.png)
+![screenshot](/img/sonos-nprone/sonos-add3.png)
 
 Go back to your Sonos app and choose Add Music Service. You should now find NPROne in the list of services.
 
@@ -61,9 +63,13 @@ Select I already have an account.
 
 ![screenshot](/img/sonos-nprone/sonos-add-1.png)
 
-Log in with your NPR One username and password.
+Open [http://npr.org/device](http://npr.org/device) and enter the code shown in the Sonos window.
 
 ![screenshot](/img/sonos-nprone/sonos-add-2.png)
+
+Allow access for the NPR One Sonos app. You might have to log in first with your NPR One credentials if you haven't done already.
+
+![screenshot](/img/sonos-nprone/sonos-add-3.png)
 
 Now you are all set and can start listening to NPR One. You can skip and favourite stories just like in the NPR One app. Changing your NPR home station is currently not supported, however if you change it in the NPROne mobile app, the Sonos service will pick up the new station.
 
