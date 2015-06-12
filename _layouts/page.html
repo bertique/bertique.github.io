@@ -7,8 +7,9 @@ ispage: true
 			<br>
 			<div class="row">
 				<h2 class="centered">{{ page.title }}</h2>
-				<div class="centered">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>
+				<div class="centered">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</div>		
 				<hr>
+				<div class="centered addthis_sharing_toolbox"></div>
 				
 				<div class="col-lg-offset-2 col-lg-8 post-content">
 				{{ content }}
