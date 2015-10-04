@@ -9,7 +9,7 @@ excerpt: |
  Java \| APIs
 ---
 
-Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and I really like the NPR One app. That's why I have built this service. This service is supported neither by NPR nor by Sonos, so please send all feedback and problems to [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
+Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and I really like the [NPR One app](http://www.npr.org/about/products/npr-one/). That's why I have built this service. This service is supported neither by NPR nor by Sonos, so please send all feedback and problems to [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
 
 **Updates**
 
