@@ -560,7 +560,7 @@ a:after {
 	transition: transform 0.4s;
 }
 
-.no-touch .mask figure:hover img,
+.mask figure:hover img,
 .mask figure.cs-hover img {
 	-webkit-transform: translateY(-30px);
 	-moz-transform: translateY(-30px);
@@ -583,7 +583,7 @@ a:after {
 	transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-.no-touch .mask figure:hover figcaption,
+.mask figure:hover figcaption,
 .mask figure.cs-hover figcaption {
 	opacity: 1;
 	-webkit-transform: translateY(0px);
