@@ -8,7 +8,9 @@
 
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" /> 
     <meta property="og:image" content="{{ "/img/profile.jpg" | prepend: site.baseurl }}" /> 
-    <meta property="og:description" content="{{ site.description }}" /> 
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | markdownify | strip_html }}{% else %}{{ site.description }}{% endif %}" /> 
+    <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <meta property="og:type" content="website" />
 	
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
