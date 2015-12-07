@@ -13,6 +13,8 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 **Updates**
 
+12/05/2015: Put all [source code on GitHub](https://github.com/bertique/SonosNPROneServer) if you are interested.
+
 06/10/2015: Updated authentication to use device connect through the NPR website(using OAuth). If you previously added the service, it will ask you to re-authenticate (you might have to update the service configuration on your customsd.htm). Also improved search to include aggregation lists of shows and podcasts.
 
 03/25/2015: Added Search and Suggestions - Now you can search through the NPR archive using the Sonos search. If you have previously added the service, make sure to update the settings to include search and update the version on the presentation map.
