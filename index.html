@@ -57,7 +57,11 @@ layout: default
 							<img class="img-responsive" src="{{ page.image | prepend: site.baseurl }}" alt="">
 							<figcaption>
 								<h5>{{ page.title }}</h5>
+								{% if page.permalink %}
+								<a href="{{ page.permalink | prepend: site.baseurl }}" class="btn btn-primary btn-lg">Take a Look</a>
+								{% else %}
 								<a data-toggle="modal" href="#myModal{{ forloop.index }}" class="btn btn-primary btn-lg">Take a Look</a>
+								{% endif %}
 							</figcaption><!-- /figcaption -->
 						</figure><!-- /figure -->
 			    	</div><!-- /grid-mask -->
