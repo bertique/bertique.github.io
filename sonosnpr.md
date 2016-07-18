@@ -1,6 +1,6 @@
 ---
 layout: page
-title: NPROne for Sonos
+title: NPR One for Sonos
 permalink: /sonos-nprone/
 image: /img/project_sonos_nprone.jpg
 excerpt: |
