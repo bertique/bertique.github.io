@@ -13,6 +13,8 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 **Updates**
 
+11/01/2016: Added new NPR Music channels
+
 03/21/2016: Added new channels (Suggested, Followed, Recent, etc.). 
 
 12/05/2015: Put all [source code on GitHub](https://github.com/bertique/SonosNPROneServer) if you are interested.
