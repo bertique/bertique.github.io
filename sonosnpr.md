@@ -49,7 +49,7 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 You will need a NPR One account. You can create one for free by downloading the [NPR One app](http://www.npr.org/about/products/npr-one/), or right on the [NPR website](http://www.npr.org/templates/reg/).
 
 ### Adding NPROne to your Sonos
-Open your Sonos desktop app and go to Help ->  About my Sonos System...
+Open your Sonos desktop app and go to Help ->  About my Sonos System... (on Mac this is located under the SONOS menu)
 
 ![screenshot](/img/sonos-nprone/sonos-init.png)
 
