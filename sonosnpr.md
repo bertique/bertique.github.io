@@ -4,7 +4,7 @@ title: NPR One for Sonos
 permalink: /sonos-nprone/
 image: /img/project_sonos_nprone.jpg
 keywords: Sonos, NPR One, NPR, National Public Radio, NPR Music
-description: Listen to NPR One on your Sonos system. Enjoy shows you follow, NPR music and more through all your wireless speakers
+description: Listen to NPR One on your Sonos system. Enjoy shows you follow, NPR music and more through all your wireless speakers.
 excerpt: |
  I love my [Sonos](http://sonos.com) wireless music system. Inspired by the work of [Rahim S](http://www.hirahim.com/blog/2014/07/10/shutting-down-soundcloud-on-sonos/), I built a service to integrate the NPROne radio service into Sonos using the [Sonos API](http://musicpartners.sonos.com).
  
