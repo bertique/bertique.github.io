@@ -3,6 +3,8 @@ layout: page
 title: NPR One for Roku
 permalink: /roku-nprone/
 image: /img/project_roku_nprone.jpg
+keywords: Roku, NPR One, NPR, National Public Radio, NPR Music
+description: Listen to NPR One on your Roku TV. Enjoy shows you follow, NPR music and more through all your TV
 excerpt: |
  blah
  
