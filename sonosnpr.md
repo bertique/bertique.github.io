@@ -13,17 +13,21 @@ excerpt: |
 
 Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and I really like the [NPR One app](http://www.npr.org/about/products/npr-one/). That's why I have built this service. This service is supported neither by NPR nor by Sonos, so please send all feedback and problems to [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
 
+<img src="/img/sonos-nprone/sonos-done2.png" width="350px" />
+
 **Updates**
 
-11/01/2016: Added new NPR Music channels
+11/01/2016: Added new NPR Music channels.
+
+07/01/2016: NPR One for Sonos got featured on the [NPR One project gallery](https://dev.npr.org/guide/prerequisites/project-gallery/).
 
 03/21/2016: Added new channels (Suggested, Followed, Recent, etc.). 
 
 12/05/2015: Put all [source code on GitHub](https://github.com/bertique/SonosNPROneServer) if you are interested.
 
-06/10/2015: Updated authentication to use device connect through the NPR website(using OAuth). If you previously added the service, it will ask you to re-authenticate (you might have to update the service configuration on your customsd.htm). Also improved search to include aggregation lists of shows and podcasts.
+06/10/2015: Updated authentication to use NPR's oauth. Also improved search to include aggregation lists of shows and podcasts.
 
-03/25/2015: Added Search and Suggestions - Now you can search through the NPR archive using the Sonos search. If you have previously added the service, make sure to update the settings to include search and update the version on the presentation map.
+03/25/2015: Added Search and Suggestions - Now you can search through the NPR archive using the Sonos search.
 
 **Keep me posted about updates**
 
@@ -45,8 +49,8 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 </div>
 
 <!--End mc_embed_signup-->
- 
- 
+
+## Instructions 
 ### Before you start
 You will need a NPR One account. You can create one for free by downloading the [NPR One app](http://www.npr.org/about/products/npr-one/), or right on the [NPR website](http://www.npr.org/templates/reg/).
 
