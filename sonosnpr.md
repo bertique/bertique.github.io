@@ -19,7 +19,7 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 11/01/2016: Added new NPR Music channels.
 
-07/01/2016: NPR One for Sonos got featured on the [NPR One project gallery](https://dev.npr.org/guide/prerequisites/project-gallery/).
+07/01/2016: NPR One for Sonos got featured on the [NPR One project gallery](http://dev.npr.org/guide/prerequisites/project-gallery/).
 
 03/21/2016: Added new channels (Suggested, Followed, Recent, etc.). 
 
