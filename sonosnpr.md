@@ -13,7 +13,7 @@ excerpt: |
 
 Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and I really like the [NPR One app](http://www.npr.org/about/products/npr-one/). That's why I have built this service. This service is supported neither by NPR nor by Sonos, so please send all feedback and problems to [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
 
-<img src="/img/sonos-nprone/sonos-done2.png" width="350px" />
+<a class="twitter-grid" data-limit="3" data-partner="tweetdeck" href="https://twitter.com/midi2dot0/timelines/856291675596967938">NPR One for Sonos tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **Updates**
 
