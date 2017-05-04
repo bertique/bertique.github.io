@@ -8,13 +8,13 @@
 		  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="icon icon-list" style="font-size:30px; color:#3498db;"></span>
           </button>
-          <a class="navbar-brand hidden-xs hidden-sm smoothScroll" href="{{ "/#home" | prepend: site.url }}"><strong>Michael Dick</strong></a>
+          <a class="navbar-brand hidden-xs hidden-sm smoothScroll" href="{{ "/#home" | prepend: site.baseurl }}"><strong>Michael Dick</strong></a>
         </div>
 			<div class="navbar-collapse collapse">
 			  <ul class="nav navbar-nav">			
-				  <li><a href="{{ "/#greywrap" | prepend: site.url }}" class="smoothScroll">Home</a></li>
-				  <li><a href="{{ "/#projects" | prepend: site.url }}" class="smoothScroll">Projects</a></li>
-				  {% if site.posts != empty %}<li><a href="{{ "/#blog" | prepend: site.url }}" class="smoothScroll">Blog</a></li>		{% endif %}		  
+				  <li><a href="{{ "/#greywrap" | prepend: site.baseurl }}" class="smoothScroll">Home</a></li>
+				  <li><a href="{{ "/#projects" | prepend: site.baseurl }}" class="smoothScroll">Projects</a></li>
+				  {% if site.posts != empty %}<li><a href="{{ "/#blog" | prepend: site.baseurl }}" class="smoothScroll">Blog</a></li>		{% endif %}		  
 			 </ul>
 			</div><!--/.nav-collapse -->
 		  </div>
