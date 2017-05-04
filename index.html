@@ -27,7 +27,7 @@ layout: default
 						<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="icon icon-twitter2"></a></p>
 					</div>	
 					<div class="col-lg-8 centered">
-						<img class="img-responsive" src="{{ "/img/macbook.png" | prepend: site.baseurl }}" align="">
+						<img class="img-responsive" src="{{ "/img/macbook.png" | prepend: site.url }}" align="">
 					</div>					
 				</div><!-- row -->
 			</div>
@@ -54,11 +54,11 @@ layout: default
 				<div class="col-md-4 ">
 			    	<div class="grid mask">
 						<figure>
-							<img class="img-responsive" src="{{ page.image | prepend: site.baseurl }}" alt="">
+							<img class="img-responsive" src="{{ page.image | prepend: site.url }}" alt="">
 							<figcaption>
 								<h5>{{ page.title }}</h5>
 								{% if page.permalink %}
-								<a href="{{ page.permalink | prepend: site.baseurl }}" class="btn btn-primary btn-lg">Take a Look</a>
+								<a href="{{ page.permalink | prepend: site.url }}" class="btn btn-primary btn-lg">Take a Look</a>
 								{% else %}
 								<a data-toggle="modal" href="#myModal{{ forloop.index }}" class="btn btn-primary btn-lg">Take a Look</a>
 								{% endif %}
@@ -78,10 +78,10 @@ layout: default
 						          <h4 class="modal-title">{{ page.title }}</h4>
 						        </div>
 						        <div class="modal-body">
-						          <p><img class="img-responsive" src="{{ page.image | prepend: site.baseurl }}" alt="" style="width:300px"></p>
+						          <p><img class="img-responsive" src="{{ page.image | prepend: site.url }}" alt="" style="width:300px"></p>
 						          <p>{{ page.excerpt | markdownify }}</p>
 								  {% if page.permalink %}
-						          <p><b><a href="{{ page.permalink | prepend: site.baseurl }}">Visit Project Site</a></b></p>
+						          <p><b><a href="{{ page.permalink | prepend: site.url }}">Visit Project Site</a></b></p>
 								  {% endif %}
 						        </div>
 						        <div class="modal-footer">
@@ -116,7 +116,7 @@ layout: default
 				<div class="col-lg-12 blog-bg">
 					<div class="col-lg-3 centered">
 					<br>
-						<p><img class="img img-circle" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}" width="120px" height="120px"></p>
+						<p><img class="img img-circle" src="{{ "/img/profile.jpg" | prepend: site.url }}" width="120px" height="120px"></p>
 						<h4>Michael</h4>
 						<a href="https://twitter.com/{{ site.twitter_username }}" class="icon icon-twitter"></a>
 					</div>
@@ -126,7 +126,7 @@ layout: default
 						<h2>{{ post.title}}</h2>
 						<h5>Published {{ post.date | date: "%B %-d" }}.</h5>
 						{{ post.excerpt }}
-						<p><a href="{{ post.url | prepend: site.baseurl }}" class="icon icon-link"> Read More</a></p>
+						<p><a href="{{ post.url | prepend: site.url }}" class="icon icon-link"> Read More</a></p>
 						<br>
 						</div>
 					{% endfor %}
