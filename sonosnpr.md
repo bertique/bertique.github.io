@@ -11,25 +11,27 @@ excerpt: |
  Java \| APIs
 ---
 
-Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and I really like the [NPR One app](http://www.npr.org/about/products/npr-one/). That's why I have built this service. This service is supported neither by NPR nor by Sonos, so please send all feedback and problems to [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
+Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and I really like the [NPR One app](http://www.npr.org/about/products/npr-one/){:target="_blank"}. That's why I have built this service. This service is supported neither by NPR nor by Sonos, so please send all feedback and problems to [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
 
 <a class="twitter-grid" data-limit="3" data-partner="tweetdeck" href="https://twitter.com/midi2dot0/timelines/856291675596967938">NPR One for Sonos tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **Updates**
 
+05/13/2017: Added easier way to add service below (Thanks Josh from [Overcast + Sonos](https://github.com/josh/overcast-sonos){:target="_blank"})
+
 11/01/2016: Added new NPR Music channels.
 
-07/01/2016: NPR One for Sonos got featured on the [NPR One project gallery](http://dev.npr.org/guide/prerequisites/project-gallery/).
+07/01/2016: NPR One for Sonos got featured on the [NPR One project gallery](http://dev.npr.org/guide/prerequisites/project-gallery/){:target="_blank"}.
 
 03/21/2016: Added new channels (Suggested, Followed, Recent, etc.). 
 
-12/05/2015: Put all [source code on GitHub](https://github.com/bertique/SonosNPROneServer) if you are interested.
+12/05/2015: Put all [source code on GitHub](https://github.com/bertique/SonosNPROneServer){:target="_blank"} if you are interested.
 
 06/10/2015: Updated authentication to use NPR's oauth. Also improved search to include aggregation lists of shows and podcasts.
 
 03/25/2015: Added Search and Suggestions - Now you can search through the NPR archive using the Sonos search.
 
-**Keep me posted about updates**
+**Find out about updates**
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -53,44 +55,52 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 ## Instructions 
 
 ### Before you start
-You will need a NPR One account. You can create one for free by downloading the [NPR One app](http://www.npr.org/about/products/npr-one/), or right on the [NPR website](http://www.npr.org/templates/reg/).
+You will need a NPR One account. You can create one for free by downloading the [NPR One app](http://www.npr.org/about/products/npr-one/){:target="_blank"}, or right on the [NPR website](http://www.npr.org/templates/reg/){:target="_blank"}.
 
 ### Adding NPROne to your Sonos
 Open your Sonos desktop app and go to Help ->  About my Sonos System... (on Mac this is located under the SONOS menu)
 
-![screenshot](/img/sonos-nprone/sonos-init.png)
-
-Then note down the ip address under *Associated ZP*. 
+![screenshot](/img/sonos-nprone/sonos-init.png) 
 
 ![screenshot](/img/sonos-nprone/sonos-ip.png)
 
-Open a web browser and type http://[your ip address from above]:1400/customsd.htm. So for me this would be *http://192.168.1.213:1400/customsd.htm*.
+Then note down the ip address under *Associated ZP*. For me this would be *192.168.1.213*.
 
-Enter the information below into the form and hit submit. This will add the service to your Sonos.
+Alternatively, you can also use your Sonos app on your iOS or Android to find the ip address. Check under Settings -> About my Sonos System
 
-1. **SID:** 255
-2. **Service Name:** NPROne
-3. **Endpoint URL:** http://sonosnprone.herokuapp.com/soap
-4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
-5. **Polling Interval:** 3600
-6. **Authentication SOAP header policy:** Device Link
-7. **Strings table:** 
- * Version: 2
- * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
-8. **Presentation map:**
- * Version: 2
- * Uri: http://sonosnprone.herokuapp.com/static/presentationMap.xml
-9. **Container Type:**
- * Music Service
-11. **Capabilities:**
- * Search
- * Playback duration logging at track end
- * Playback event logging during track play
- * Extended Metadata (for MOAPI-based InfoView)
- 
-![screenshot](/img/sonos-nprone/sonos-add3.png)
+![screenshot](/img/sonos-nprone/sonos-ip-ios.png)
 
-Go back to your Sonos app and choose Add Music Service. You should now find NPROne in the list of services.
+Enter the ip address into the field below and hit Register Service. The window below will say "Success!" once the service is added.
+
+<input id="sonos-ip" placeholder="192.168.1.213" /><button id="submit-button">Register Service</button>
+<iframe id="customsd" name="customsd"></iframe>
+<form id="customsd-form" method="POST" target="customsd">
+	<input type="hidden" name="sid" value="255">
+	<input type="hidden" name="name" value="NPR One">
+	<input type="hidden" name="uri" value="http://sonosnprone.herokuapp.com/soap">
+	<input type="hidden" name="secureUri" value="https://sonosnprone.herokuapp.com/soap">
+	<input type="hidden" name="pollInterval" value="3600">
+	<input type="hidden" name="authType" value="DeviceLink">
+	<input type="hidden" name="stringsVersion" value="2">
+	<input type="hidden" name="stringsUri" value="http://sonosnprone.herokuapp.com/static/strings.xml">
+	<input type="hidden" name="presentationMapVersion" value="2">
+	<input type="hidden" name="presentationMapUri" value="http://sonosnprone.herokuapp.com/static/presentationMap.xml">
+	<input type="hidden" name="containerType" value="MService">
+	<input type="hidden" name="caps" value="search">	
+	<input type="hidden" name="caps" value="logging">
+	<input type="hidden" name="caps" value="playbackLogging">
+	<input type="hidden" name="caps" value="extendedMD">
+</form>
+<script type="text/javascript">
+$('#submit-button').click(function(data) {  
+  $('#customsd-form').attr('action','http://' + $('#sonos-ip').val() + ':1400/customsd');
+  $('#customsd-form').submit();
+});
+</script>
+
+If you do not see "Success!", you can try the [alternative way](#alternative-way-of-adding-the-service) of adding the service. Otherwise continue.
+
+Go back to your Sonos app and choose Add Music Service. You should now find NPR One in the list of services.
 
 ![screenshot](/img/sonos-nprone/sonos-service.png)
 
@@ -98,7 +108,7 @@ Select I already have an account.
 
 ![screenshot](/img/sonos-nprone/sonos-add-1.png)
 
-Open [http://npr.org/device](http://npr.org/device) and enter the code shown in the Sonos window.
+Open [http://npr.org/device](http://npr.org/device){:target="_blank"} and enter the code shown in the Sonos window.
 
 ![screenshot](/img/sonos-nprone/sonos-add-2.png)
 
@@ -127,4 +137,32 @@ Go back to the browser page from above and submit the form, leaving all fields e
 
 ![screenshot](/img/sonos-nprone/sonos-remove-3.png)
 
+### Alternative way of adding the service
 
+(This is only necessary if the automatic way above does not work)
+
+Open a web browser and type http://[your ip address from above]:1400/customsd.htm. So for me this would be *http://192.168.1.213:1400/customsd.htm*.
+
+Enter the information below into the form and hit submit. This will add the service to your Sonos.
+
+1. **SID:** 255
+2. **Service Name:** NPROne
+3. **Endpoint URL:** http://sonosnprone.herokuapp.com/soap
+4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
+5. **Polling Interval:** 3600
+6. **Authentication SOAP header policy:** Device Link
+7. **Strings table:** 
+ * Version: 2
+ * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
+8. **Presentation map:**
+ * Version: 2
+ * Uri: http://sonosnprone.herokuapp.com/static/presentationMap.xml
+9. **Container Type:**
+ * Music Service
+11. **Capabilities:**
+ * Search
+ * Playback duration logging at track end
+ * Playback event logging during track play
+ * Extended Metadata (for MOAPI-based InfoView)
+ 
+![screenshot](/img/sonos-nprone/sonos-add3.png)
