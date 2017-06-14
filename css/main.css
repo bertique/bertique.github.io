@@ -242,7 +242,7 @@ blockquote cite:before {
 
 div.post-content > p > img  {
     -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
-    filter: url(#drop-shadow);
+/*    filter: url(#drop-shadow); */
     -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#444')";
     filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=10, OffY=10, Color='#444')";
 	display: block;
