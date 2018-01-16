@@ -2,7 +2,7 @@
 layout: default
 ---
 <!-- ==== HEADERWRAP ==== -->
-	    <a href="#greywrap" class="smoothScroll"><div id="home" name="home">
+	    <a href="#greywrap"><div id="home" name="home">
 			<header class="clearfix">
 	  		 		
 	  		</header>	    
@@ -12,7 +12,7 @@ layout: default
 		<div id="greywrap">		
 			<div class="container">
 						<div class="row">
-		<a href="#greywrap" class="glyphicon glyphicon-chevron-down smoothScroll"></a>
+		<a href="#greywrap" class="glyphicon glyphicon-chevron-down"></a>
 				<br>
 				<br>
 			</div><!-- /row -->
@@ -21,13 +21,13 @@ layout: default
 					<div class="col-lg-4">
 						<h2>Hi,</h2>
 						<p>I'm Michael. I love creating things - software, music, art. Check <a href="https://twitter.com/{{ site.twitter_username }}">my Twitter</a> to see what I'm up to. </p>
-						<p><a href="mailto:{{ site.email }}" target="_blank" class="icon icon-mail"></a>
-						<a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank" class="icon icon-linkedin2"></a>
-						<a href="https://github.com/{{ site.github_username }}" target="_blank" class="icon icon-github"></a>
-						<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" class="icon icon-twitter2"></a></p>
+						<p><a href="mailto:{{ site.email }}" target="_blank" rel="noopener" class="icon icon-mail"></a>
+						<a href="https://linkedin.com/{{ site.linkedin_username }}" target="_blank" rel="noopener" class="icon icon-linkedin2"></a>
+						<a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener" class="icon icon-github"></a>
+						<a href="https://twitter.com/{{ site.twitter_username }}" target="_blank" rel="noopener" class="icon icon-twitter2"></a></p>
 					</div>	
 					<div class="col-lg-8 centered">
-						<img class="img-responsive" src="{{ "/img/macbook.png" | prepend: site.baseurl }}" align="">
+						<img class="img-responsive" src="{{ "/img/macbook.png" | prepend: site.baseurl }}" alt="Macbook" align="">
 					</div>					
 				</div><!-- row -->
 			</div>
@@ -41,7 +41,7 @@ layout: default
 		<br>
 			<div class="row">
 				<br>
-				<a href="#projects" class="smoothScroll"><h1 class="centered">SIDE PROJECTS</h1></a>
+				<a href="#projects"><h1 class="centered">SIDE PROJECTS</h1></a>
 				<hr>
 				<br>
 				<br>
@@ -107,7 +107,7 @@ layout: default
 		<br>
 			<div class="row">
 				<br>
-				<a href="#blog" class="smoothScroll"><h1 class="centered">RANDOM THOUGHTS</h1></a>
+				<a href="#blog"><h1 class="centered">RANDOM THOUGHTS</h1></a>
 				<hr>
 				<br>
 				<br>
@@ -116,7 +116,7 @@ layout: default
 				<div class="col-lg-12 blog-bg">
 					<div class="col-lg-3 centered">
 					<br>
-						<p><img class="img img-circle" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}" width="120px" height="120px"></p>
+						<p><img class="img img-circle" src="{{ "/img/profile.jpg" | prepend: site.baseurl }}" alt="Profile image" width="120px" height="120px"></p>
 						<h4>Michael</h4>
 						<a href="https://twitter.com/{{ site.twitter_username }}" class="icon icon-twitter"></a>
 					</div>
