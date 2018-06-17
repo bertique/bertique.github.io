@@ -17,7 +17,7 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 **Updates**
 
-05/13/2017: Added easier way to add service below (Thanks Josh from [Overcast + Sonos](https://github.com/josh/overcast-sonos){:target="_blank"})
+~~05/13/2017: Added easier way to add service below (Thanks Josh from [Overcast + Sonos](https://github.com/josh/overcast-sonos){:target="_blank"})~~
 
 11/01/2016: Added new NPR Music channels.
 
@@ -70,35 +70,31 @@ Alternatively, you can also use your Sonos app on your iOS or Android to find th
 
 ![screenshot](/img/sonos-nprone/sonos-ip-ios.png)
 
-Enter the ip address into the field below and hit Register Service. The window below will say "Success!" once the service is added.
+Open a web browser and type http://[your ip address from above]:1400/customsd.htm. So for me this would be *http://192.168.1.213:1400/customsd.htm*.
 
-<input id="sonos-ip" placeholder="192.168.1.213" /><button id="submit-button">Register Service</button>
-<iframe id="customsd" name="customsd"></iframe>
-<form id="customsd-form" method="POST" target="customsd">
-	<input type="hidden" name="sid" value="255">
-	<input type="hidden" name="name" value="NPR One">
-	<input type="hidden" name="uri" value="http://sonosnprone.herokuapp.com/soap">
-	<input type="hidden" name="secureUri" value="https://sonosnprone.herokuapp.com/soap">
-	<input type="hidden" name="pollInterval" value="3600">
-	<input type="hidden" name="authType" value="DeviceLink">
-	<input type="hidden" name="stringsVersion" value="2">
-	<input type="hidden" name="stringsUri" value="http://sonosnprone.herokuapp.com/static/strings.xml">
-	<input type="hidden" name="presentationMapVersion" value="2">
-	<input type="hidden" name="presentationMapUri" value="http://sonosnprone.herokuapp.com/static/presentationMap.xml">
-	<input type="hidden" name="containerType" value="MService">
-	<input type="hidden" name="caps" value="search">	
-	<input type="hidden" name="caps" value="logging">
-	<input type="hidden" name="caps" value="playbackLogging">
-	<input type="hidden" name="caps" value="extendedMD">
-</form>
-<script type="text/javascript">
-$('#submit-button').click(function(data) {  
-  $('#customsd-form').attr('action','http://' + $('#sonos-ip').val() + ':1400/customsd');
-  $('#customsd-form').submit();
-});
-</script>
+Enter the information below into the form and hit submit. This will add the service to your Sonos.
 
-If you do not see "Success!", you can try the [alternative way](#alternative-way-of-adding-the-service) of adding the service. Otherwise continue.
+1. **SID:** 255
+2. **Service Name:** NPROne
+3. **Endpoint URL:** http://sonosnprone.herokuapp.com/soap
+4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
+5. **Polling Interval:** 3600
+6. **Authentication SOAP header policy:** Device Link
+7. **Strings table:** 
+ * Version: 2
+ * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
+8. **Presentation map:**
+ * Version: 2
+ * Uri: http://sonosnprone.herokuapp.com/static/presentationMap.xml
+9. **Container Type:**
+ * Music Service
+11. **Capabilities:**
+ * Search
+ * Playback duration logging at track end
+ * Playback event logging during track play
+ * Extended Metadata (for MOAPI-based InfoView)
+ 
+![screenshot](/img/sonos-nprone/sonos-add3.png)
 
 Go back to your Sonos app and choose Add Music Service. You should now find NPR One in the list of services.
 
@@ -136,33 +132,3 @@ Find the NPROne services in the list and hit Remove.
 Go back to the browser page from above and submit the form, leaving all fields empty. This will remove the NPROne service from your Sonos.
 
 ![screenshot](/img/sonos-nprone/sonos-remove-3.png)
-
-### Alternative way of adding the service
-
-(This is only necessary if the automatic way above does not work)
-
-Open a web browser and type http://[your ip address from above]:1400/customsd.htm. So for me this would be *http://192.168.1.213:1400/customsd.htm*.
-
-Enter the information below into the form and hit submit. This will add the service to your Sonos.
-
-1. **SID:** 255
-2. **Service Name:** NPROne
-3. **Endpoint URL:** http://sonosnprone.herokuapp.com/soap
-4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
-5. **Polling Interval:** 3600
-6. **Authentication SOAP header policy:** Device Link
-7. **Strings table:** 
- * Version: 2
- * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
-8. **Presentation map:**
- * Version: 2
- * Uri: http://sonosnprone.herokuapp.com/static/presentationMap.xml
-9. **Container Type:**
- * Music Service
-11. **Capabilities:**
- * Search
- * Playback duration logging at track end
- * Playback event logging during track play
- * Extended Metadata (for MOAPI-based InfoView)
- 
-![screenshot](/img/sonos-nprone/sonos-add3.png)
