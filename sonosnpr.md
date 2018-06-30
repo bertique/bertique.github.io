@@ -17,6 +17,8 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 **Updates**
 
+06/30/2018: Bug fixes and performance improvements.
+
 ~~05/13/2017: Added easier way to add service below (Thanks Josh from [Overcast + Sonos](https://github.com/josh/overcast-sonos){:target="_blank"})~~
 
 11/01/2016: Added new NPR Music channels.
@@ -52,12 +54,14 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 <!--End mc_embed_signup-->
 
-## Instructions 
+## Instructions
 
 ### Before you start
+
 You will need a NPR One account. You can create one for free by downloading the [NPR One app](http://www.npr.org/about/products/npr-one/){:target="_blank"}, or right on the [NPR website](http://www.npr.org/templates/reg/){:target="_blank"}.
 
 ### Adding NPROne to your Sonos
+
 Open your Sonos desktop app and go to Help ->  About my Sonos System... (on Mac this is located under the SONOS menu)
 
 ![screenshot](/img/sonos-nprone/sonos-init.png) 
@@ -80,9 +84,9 @@ Enter the information below into the form and hit submit. This will add the serv
 4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
 5. **Polling Interval:** 3600
 6. **Authentication SOAP header policy:** Device Link
-7. **Strings table:** 
- * Version: 2
- * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
+7. **Strings table:**
+  * Version: 2
+  * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
 8. **Presentation map:**
  * Version: 2
  * Uri: http://sonosnprone.herokuapp.com/static/presentationMap.xml
@@ -119,6 +123,7 @@ Now you are all set and can start listening to NPR One. You can skip and favouri
 Feel free to reach out with any questions or issues at [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
 
 ### Removing NPROne from your Sonos
+
 If you would like to remove the NPROne service from your Sonos just follow the steps below.
 
 Open your desktop app and go to Manage -> Settings...
