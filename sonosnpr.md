@@ -96,9 +96,10 @@ Enter the information below into the form and hit submit. This will add the serv
  * Search
  * Playback duration logging at track end
  * Playback event logging during track play
- * Extended Metadata (for MOAPI-based InfoView)
+ * Extended Metadata (More Menu, Info & Options)
+   * Extended Metadata for radios ("program") and streams ("stream") to support Info View. Requires Extended Metadata Capability.
  
-![screenshot](/img/sonos-nprone/sonos-add3.png)
+![screenshot](/img/sonos-nprone/sonos-add4.png)
 
 Go back to your Sonos app and choose Add Music Service. You should now find NPR One in the list of services.
 
