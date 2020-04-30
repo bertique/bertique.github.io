@@ -68,13 +68,13 @@ Open your Sonos desktop app and go to Help ->  About my Sonos System... (on Mac 
 
 ![screenshot](/img/sonos-nprone/sonos-ip.png)
 
-Then note down the ip address under *Associated ZP*. For me this would be *192.168.1.213*.
+Then note down the ip address under *Associated Product*. For me this would be *192.168.1.203*.
 
 Alternatively, you can also use your Sonos app on your iOS or Android to find the ip address. Check under Settings -> About my Sonos System
 
 ![screenshot](/img/sonos-nprone/sonos-ip-ios.png)
 
-Open a web browser and type http://[your ip address from above]:1400/customsd.htm. So for me this would be *http://192.168.1.213:1400/customsd.htm*.
+Open a web browser and type http://[your ip address from above]:1400/customsd.htm. So for me this would be *http://192.168.1.203:1400/customsd.htm*.
 
 Enter the information below into the form and hit submit. This will add the service to your Sonos.
 
