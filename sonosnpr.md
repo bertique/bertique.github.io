@@ -45,13 +45,18 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 <form action="//michaeldick.us11.list-manage.com/subscribe/post?u=6514e7cf250dcbb3bf07ad690&amp;id=6abfd24149" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
 <div id="mc_embed_signup_scroll">
 <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+<div class="mc-field-group input-group" style="display:none">
+    <strong>Project </strong>
+    <ul><li><input type="checkbox" value="1" name="group[19585][1]" id="mce-group[19585]-19585-0" checked><label for="mce-group[19585]-19585-0">NPR One for Sonos</label></li>
+<li><input type="checkbox" value="2" name="group[19585][2]" id="mce-group[19585]-19585-1"><label for="mce-group[19585]-19585-1">OneDrive for Sonos</label></li>
+</ul>
+</div>
 <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 <div style="position: absolute; left: -5000px;"><input type="text" name="b_6514e7cf250dcbb3bf07ad690_6abfd24149" tabindex="-1" value=""></div>
 <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
 </div>
 </form>
 </div>
-
 <!--End mc_embed_signup-->
 
 ## Instructions
