@@ -9,7 +9,9 @@ excerpt: |
  OneDrive for Sonos
 ---
 
-Hey there, I'm working on an *unofficial* OneDrive service for Sonos. If you want to be notified when it's available, sign up here:
+After building the [NPR One Service for Sonos](/sonos-nprone/), I recently found myself looking for a way to play my music stored on [OneDrive](https://onedrive.com). Seeing that OneDrive provides an [easy to use API](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/?view=odsp-graph-online), I built this service. If you run into any issues, feel free to email me at [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
+
+**Find out about updates**
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -34,8 +36,6 @@ Hey there, I'm working on an *unofficial* OneDrive service for Sonos. If you wan
 </form>
 </div>
 <!--End mc_embed_signup-->
-
-<!--
 
 ## Instructions
 
@@ -111,5 +111,3 @@ Find the OneDrive services in the list and hit Remove.
 Go back to the browser page from above and submit the form, leaving all fields empty, but the SID set to 248. This will remove the OneDrive service from your Sonos.
 
 ![screenshot](/img/sonos-onedrive/sonos-remove-3.png)
-
--->
