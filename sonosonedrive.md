@@ -65,10 +65,10 @@ Enter the information below into the form and hit submit. This will add the serv
 6. **Authentication SOAP header policy:** Device Link
 7. **Strings table:**
   * Version: 1
-  * Uri: http://sonosonedrive.herokuapp.com/static/strings.xml
+  * Uri: https://sonosonedrive.herokuapp.com/static/strings.xml
 8. **Presentation map:**
  * Version: 1
- * Uri: http://sonosonedrive.herokuapp.com/static/presentationMap.xml
+ * Uri: https://sonosonedrive.herokuapp.com/static/presentationMap.xml
 9. **Container Type:**
  * Music Service
 11. **Capabilities:**
