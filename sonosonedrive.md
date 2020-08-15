@@ -11,6 +11,8 @@ excerpt: |
 
 After building the [NPR One Service for Sonos](/sonos-nprone/), I recently found myself looking for a way to play my music stored on [OneDrive](https://onedrive.com). Seeing that OneDrive provides an [easy to use API](https://docs.microsoft.com/en-us/onedrive/developer/rest-api/?view=odsp-graph-online), I built this service. If you run into any issues, feel free to email me at [b.michael.dick@gmail.com](mailto:b.michael.dick@gmail.com).
 
+If you are a developer yourself, all code is available on [GitHub](https://github.com/bertique/SonosOneDriveServer) and you can set up your own server if you prefer to do so.
+
 **Find out about updates**
 
 <!-- Begin MailChimp Signup Form -->
