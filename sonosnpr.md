@@ -83,7 +83,7 @@ Alternatively, you can also use your Sonos app on your iOS or Android to find th
 
 Open a web browser and type http://[your ip address from above]:1400/customsd.htm. So for me this would be *http://192.168.1.203:1400/customsd.htm*.
 
-Enter the information below into the form and hit submit. This will add the service to your Sonos.
+Enter the information below into the form and hit submit at the bottom of the page. This will add the service to your Sonos.
 
 1. **SID:** 255
 2. **Service Name:** NPROne
