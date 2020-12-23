@@ -15,13 +15,11 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 If you are a developer yourself, all code is available on [GitHub](https://github.com/bertique/SonosNPROneServer) and you can set up your own server if you prefer to do so.
 
-**Support**
-
-This is a free service I built and provide, but be sure to [support your local NPR Station](https://www.npr.org/donations/support) to keep public radio going.
-
 <a class="twitter-grid" data-limit="3" data-partner="tweetdeck" href="https://twitter.com/midi2dot0/timelines/856291675596967938">NPR One for Sonos tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **Updates**
+
+12/23/2020: Still running...
 
 06/30/2018: Bug fixes and performance improvements.
 
@@ -39,7 +37,20 @@ This is a free service I built and provide, but be sure to [support your local N
 
 03/25/2015: Added Search and Suggestions - Now you can search through the NPR archive using the Sonos search.
 
-**Find out about updates**
+
+**FAQ**
+***
+
+***I get an error message 400 bad request***
+This seemse to happen from time to time. Just start over with adding the service through the customsd.htm below and make sure you follow every step exactly. Sometimes waiting another day before trying again helps.
+
+***I get an error that my account can't be authorized***
+This seemse to happen from time to time. Just start over with adding the service through the customsd.htm below and make sure you follow every step exactly. Sometimes waiting another day before trying again helps.
+
+***Does this cost money?***
+This is a free service I built and provide, but be sure to [support your local NPR Station](https://www.npr.org/donations/support) to keep public radio going.
+
+***How do I stay in the loop on any updates?***
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -66,6 +77,7 @@ This is a free service I built and provide, but be sure to [support your local N
 <!--End mc_embed_signup-->
 
 ## Instructions
+***
 
 ### Before you start
 

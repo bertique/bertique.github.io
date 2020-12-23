@@ -13,11 +13,19 @@ After building the [NPR One Service for Sonos](/sonos-nprone/), I recently found
 
 If you are a developer yourself, all code is available on [GitHub](https://github.com/bertique/SonosOneDriveServer) and you can set up your own server if you prefer to do so.
 
-**Support**
+**FAQ**
+***
 
-If you would like to help out with server costs to run this, you can send me a few dollars on [my Paypal](https://paypal.me/michaeldick99). This is a free service that I built, so this is defnitely not required but greatly appreciated.
+***I get an error message 400 bad request***
+This seemse to happen from time to time. Just start over with adding the service through the customsd.htm below and make sure you follow every step exactly. Sometimes waiting another day before trying again helps.
 
-**Find out about updates**
+***I get an error that my account can't be authorized***
+This seemse to happen from time to time. Just start over with adding the service through the customsd.htm below and make sure you follow every step exactly. Sometimes waiting another day before trying again helps.
+
+***Does this cost money?***
+People have been asking, so... if you would like to help out with server costs to run this, you can send me a few bucks on [my Paypal](https://paypal.me/michaeldick99){:target="_blank"}. This is a free service that I built, so this is defnitely not required but greatly appreciated.
+
+***How do I stay in the loop on any updates?***
 
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
@@ -44,7 +52,7 @@ If you would like to help out with server costs to run this, you can send me a f
 <!--End mc_embed_signup-->
 
 ## Instructions
-
+***
 ### Adding OneDrive to your Sonos
 
 Open your Sonos desktop app and go to Help ->  About my Sonos System... (on Mac this is located under the SONOS menu)
