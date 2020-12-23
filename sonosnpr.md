@@ -15,6 +15,10 @@ Welcome to my *unofficial* NPR One service for Sonos. I love my Sonos system and
 
 If you are a developer yourself, all code is available on [GitHub](https://github.com/bertique/SonosNPROneServer) and you can set up your own server if you prefer to do so.
 
+**Support**
+
+This is a free service I built and provide, but be sure to [support your local NPR Station](https://www.npr.org/donations/support) to keep public radio going.
+
 <a class="twitter-grid" data-limit="3" data-partner="tweetdeck" href="https://twitter.com/midi2dot0/timelines/856291675596967938">NPR One for Sonos tweets</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 **Updates**
