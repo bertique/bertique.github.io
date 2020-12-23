@@ -13,8 +13,7 @@ After building the [NPR One Service for Sonos](/sonos-nprone/), I recently found
 
 If you are a developer yourself, all code is available on [GitHub](https://github.com/bertique/SonosOneDriveServer) and you can set up your own server if you prefer to do so.
 
-**FAQ**
-
+## FAQ
 ***
 
 ***I get an error message 400 bad request***

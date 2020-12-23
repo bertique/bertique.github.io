@@ -38,8 +38,7 @@ If you are a developer yourself, all code is available on [GitHub](https://githu
 03/25/2015: Added Search and Suggestions - Now you can search through the NPR archive using the Sonos search.
 
 
-**FAQ**
-
+## FAQ
 ***
 
 ***I get an error message 400 bad request***
