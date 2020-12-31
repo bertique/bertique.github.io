@@ -9,6 +9,7 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
+gem 'github-pages'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
