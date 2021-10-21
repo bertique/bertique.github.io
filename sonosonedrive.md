@@ -27,7 +27,7 @@ This seemse to happen from time to time. Just start over with adding the service
 This seemse to happen from time to time. Just start over with adding the service through the customsd.htm below and make sure you follow every step exactly. Sometimes waiting another day before trying again helps.
 
 ***Does this cost money?***
-People have been asking, so... if you would like to help out with server costs to run this, you can send me a few bucks on [my Paypal](https://paypal.me/michaeldick99){:target="_blank"}. This is a free service that I built, so this is defnitely not required but greatly appreciated.
+People have been asking, so... if you would like to help out with server costs to run this, you can send me a few bucks on [my Paypal](https://paypal.me/michaeldick99){:target="_blank"} or Venmo at b.michael.dick@gmail.com. This is a free service that I built, so this is defnitely not required but greatly appreciated.
 
 ***How do I stay in the loop on any updates?***
 
