@@ -103,7 +103,6 @@ Enter the information below into the form and hit submit at the bottom of the pa
 
 1. **SID:** 255
 2. **Service Name:** NPROne
-3. **Endpoint URL:** http://sonosnprone.herokuapp.com/soap
 4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
 5. **Polling Interval:** 3600
 6. **Authentication SOAP header policy:** Device Link

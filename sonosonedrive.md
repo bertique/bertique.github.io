@@ -77,7 +77,6 @@ Enter the information below into the form and hit submit. This will add the serv
 
 1. **SID:** 248
 2. **Service Name:** OneDrive
-3. **Endpoint URL:** http://sonosonedrive.herokuapp.com/soap
 4. **Secure Endpoint URL:** https://sonosonedrive.herokuapp.com/soap
 5. **Polling Interval:** 3600
 6. **Authentication SOAP header policy:** Device Link
