@@ -77,15 +77,15 @@ Enter the information below into the form and hit submit. This will add the serv
 
 1. **SID:** 248
 2. **Service Name:** OneDrive
-4. **Secure Endpoint URL:** https://sonosonedrive.herokuapp.com/soap
+4. **Secure Endpoint URL:** https://sonosonedrive.michaeldick.me/soap
 5. **Polling Interval:** 3600
 6. **Authentication SOAP header policy:** Device Link
 7. **Strings table:**
   * Version: 1
-  * Uri: https://sonosonedrive.herokuapp.com/static/strings.xml
+  * Uri: https://sonosonedrive.michaeldick.me/static/strings.xml
 8. **Presentation map:**
  * Version: 1
- * Uri: https://sonosonedrive.herokuapp.com/static/presentationMap.xml
+ * Uri: https://sonosonedrive.michaeldick.me/static/presentationMap.xml
 9. **Container Type:**
  * Music Service
 11. **Capabilities:**
