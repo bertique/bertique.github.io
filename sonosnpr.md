@@ -103,15 +103,15 @@ Enter the information below into the form and hit submit at the bottom of the pa
 
 1. **SID:** 255
 2. **Service Name:** NPROne
-4. **Secure Endpoint URL:** https://sonosnprone.herokuapp.com/soap
+4. **Secure Endpoint URL:** https://sonosnprone.michaeldick.me/soap
 5. **Polling Interval:** 3600
 6. **Authentication SOAP header policy:** Device Link
 7. **Strings table:**
   * Version: 2
-  * Uri: http://sonosnprone.herokuapp.com/static/strings.xml
+  * Uri: http://sonosnprone.michaeldick.me/static/strings.xml
 8. **Presentation map:**
  * Version: 2
- * Uri: http://sonosnprone.herokuapp.com/static/presentationMap.xml
+ * Uri: http://sonosnprone.michaeldick.me/static/presentationMap.xml
 9. **Container Type:**
  * Music Service
 11. **Capabilities:**
